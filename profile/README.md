@@ -36,7 +36,7 @@ O **SmarTraffic** foi desenvolvido para otimizar a mobilidade urbana. Utilizando
 
 O projeto está organizado em **4 repositórios principais**:
 ```
-smarttraffic/
+smartraffic/
 ├── computer-vision/ -> Python + YOLO + OpenCV
 ├── arduino/ -> Firmware C++ para Arduino
 ├── artefacts/ -> Artefatos do projeto (diagramas, imagens, etc.)
