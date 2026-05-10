@@ -1,4 +1,6 @@
-# SmarTraffic
+<p align="center">
+   <img src="https://github.com/smartraffic-team/artefacts/blob/main/logo.png">
+</p>
 
 **Sistema de controle de tráfego inteligente** que utiliza visão computacional para detectar veículos e pedestres em tempo real, controlando semáforos de forma autônoma via integração com Arduino.
 
