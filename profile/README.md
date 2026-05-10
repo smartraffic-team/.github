@@ -1,1 +1,3 @@
-## SmarTraffic 
+## SmarTraffic
+
+### Descrição do Projeto
