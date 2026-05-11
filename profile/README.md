@@ -42,7 +42,8 @@ smartraffic/
 ├── computer-vision/ -> Python + YOLO + OpenCV
 ├── arduino/ -> Firmware C++ para Arduino
 ├── artefacts/ -> Artefatos do projeto (diagramas, imagens, etc.)
-└── docs/ -> Website do projeto + documentação técnica
+├── docs/ -> Documentação técnica
+└── web/ -> Website do projeto
 ```
 ---
 
