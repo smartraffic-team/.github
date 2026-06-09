@@ -53,24 +53,24 @@ smartraffic/
 flowchart TD
     A[Início] --> B[Capturar frame da câmera]
     B --> C[Rodar detecção YOLO]
-    C --> D{Detectou PCD?}
+    C --> D{Detectou pedestre PCD?}
     
-    D -- Sim --> E[Comando: VERMELHO para veículos]
-    E --> F[Estende tempo de travessia]
+    D -- Sim --> E[Sinal VERMELHO para veículos]
+    E --> F[Tempo de travessia estendido]
     F --> G[Registra evento de prioridade máxima]
     G --> B
 
     D -- Não --> H{Detectou pedestre comum?}
-    H -- Sim --> I[Ciclo atual termina?]
-    I -- Sim --> J[Libera travessia pedestres]
+    H -- Sim --> I{Ciclo atual de veículos terminou?}
+    I -- Sim --> J[Sinal VERDE para pedestres]
     J --> B
-    I -- Não --> K[Aguarda fim do ciclo]
+    I -- Não --> K[Aguardar fim do ciclo veicular]
     K --> B
 
-    H -- Não --> L{Detectou veículo?}
-    L -- Sim --> M[Fluxo contínuo para veículos]
+    H -- Não --> L{Quantidade de veículos na fila > limite?}
+    L -- Sim --> M[Manter sinal VERDE para veículos]
     M --> B
 
-    L -- Não --> N[Mantém estado atual do semáforo]
+    L -- Não --> N[Manter estado atual do semáforo]
     N --> B
 ```
